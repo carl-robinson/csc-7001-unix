@@ -1,0 +1,14 @@
+#!/bin/sh
+start=$1
+i=$start
+end=$2
+
+echo "Displaying numbers from $start to $end ..."
+
+while [ $i -le $end ]
+do
+	echo $i
+	i=`expr $i + 1`
+done
+
+echo "aaaand we're done."

@@ -1,0 +1,8 @@
+#!/bin/sh
+echo "Displaying $1 lines from first occurence of $2 in file $3"
+i=`grep -n $2 $3 | head -n 1 | cut -d':' -f1`
+echo "i=$i"
+headLines=`expr $i + $1`
+echo $headLines
+#echo `head -n $headLines $3`
+echo `head -n $headLines $3 | tail -n $1`

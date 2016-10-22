@@ -1,0 +1,5 @@
+#!/bin/sh
+i=`ps aux | grep $1 | wc -l`
+i=`expr $i - 1`
+echo $i
+

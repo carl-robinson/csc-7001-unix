@@ -1,0 +1,9 @@
+#!/bin/sh
+start=$1
+end=$2
+
+echo "Displaying numbers from $start to $end ..."
+
+seq $start $end
+
+echo "aaaand we're done."
